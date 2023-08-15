@@ -172,10 +172,10 @@ function pintar() {
         cardDiv.classList.add('card');
         cardDiv.style.width = '18rem';
 
-        if (e.estadoCita === 'sita terminada') {
-            cardDiv.classList.add('card-sita-terminada');
-        } else if (e.estadoCita === 'sita Cancelada') {
-            cardDiv.classList.add('card-sita-cancelada');
+        if (e.estadoCita === 'Cita terminada') {
+            cardDiv.classList.add('card-Cita-terminada');
+        } else if (e.estadoCita === 'Cita Cancelada') {
+            cardDiv.classList.add('card-Cita-cancelada');
         }
 
         let cardImg = document.createElement('img');
@@ -206,9 +206,9 @@ function pintar() {
         let estadoSelect = document.createElement('select');
         estadoSelect.classList.add('form-select', 'mb-3');
         estadoSelect.innerHTML = `
-        <option value="Estado de sita">Estado de sita</option>
-          <option value="sita terminada">Sita Terminada</option>
-          <option value="sita Cancelada">Sita Cancelada</option>
+        <option value="Estado de Cita">Estado de Cita</option>
+          <option value="Cita terminada">Cita Terminada</option>
+          <option value="Cita Cancelada">Cita Cancelada</option>
         `;
 
         estadoSelect.addEventListener('change', function () {
